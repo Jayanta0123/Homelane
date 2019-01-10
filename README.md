@@ -8,10 +8,13 @@ The application has a basic CRUD feature implemented on a set of notes. In other
 
 # Steps to run the application
 1. Download the project, unzip and go to the root-directory of this unzipped folder.
-2. Open a bash shell
-3. Run *mvn clean install*
-4. Run **java -jar target/HomeLane-1.0.0.jar**, you can press tab-key to select the proper file under "target/" folder   , filename starts with Home 
-5. The application will run on port 6280. 
+2. Install MySQL database-server on your machine, installer available at this link - https://dev.mysql.com/downloads/mysql/5.7.html
+3. Take a note of the root-password for your Mysql server.
+4. Replace the password in the application.properties file, and put as a value for "spring.datasource.password" field.
+5. Open a bash shell
+6. Run *mvn clean install*
+7. Run **java -jar target/HomeLane-1.0.0.jar**, you can press tab-key to select the proper file under "target/" folder   , filename starts with Home 
+8. The application will run on port 6280. 
 
 # Details about the API-endpoints
 1. Create Note          ::  /api/newnote/   Http-type = POST
